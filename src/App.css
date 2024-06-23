@@ -1723,6 +1723,262 @@ p {
   }
 }
 
+@media (max-width: 360px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -540px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -640px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 393px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -580px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -280px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -430px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -520px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -470px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 428px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .container {
+    padding: 0 20px;
+  }
+
+  .hero img {
+    object-position: -530px 0; /* Mengatur posisi gambar secara horizontal dengan piksel */
+  }
+
+  .hero .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
 /*About Section*/
 /* About Section Responsive Styles */
 @media (max-width: 1200px) {
