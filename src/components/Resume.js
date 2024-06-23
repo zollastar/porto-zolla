@@ -103,8 +103,7 @@ const Resume = () => {
               <h5>2024</h5>
               <ul>
                 <li>
-                  Sebagai panitia Olimpiade Mahasiswa IPB sekaligus Wakil PJ
-                  dalam sub-divisi video editing
+                  Sebagai panitia Olimpiade Mahasiswa IPB
                 </li>
               </ul>
             </div>
