@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const variants = {
@@ -14,24 +14,24 @@ const About = () => {
       y: 0,
       transition: {
         duration: 1,
-        ease: "easeInOut"
-      }
+        ease: "easeInOut",
+      },
     },
     hidden: {
       opacity: 0,
-      y: 50
-    }
+      y: 50,
+    },
   };
 
   return (
     <section className="about" id="about" ref={ref}>
-      <motion.div 
+      <motion.div
         className="w-full"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={variants}
       >
-        <h2>About Me</h2>
+        <h2>About Me Zolla Tampan</h2>
         <p>
           Halo, nama saya Zolla Perdana Putra Harahap. Saya adalah mahasiswa di
           IPB University, jurusan Teknologi Rekayasa Perangkat Lunak. Dengan
@@ -50,15 +50,15 @@ const About = () => {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, ease: "easeInOut", delay: 0.2 }
+                transition: { duration: 1, ease: "easeInOut", delay: 0.2 },
               },
               hidden: {
                 opacity: 0,
-                y: 50
-              }
+                y: 50,
+              },
             }}
           />
-          <motion.div 
+          <motion.div
             className="about-details"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -66,12 +66,12 @@ const About = () => {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, ease: "easeInOut", delay: 0.4 }
+                transition: { duration: 1, ease: "easeInOut", delay: 0.4 },
               },
               hidden: {
                 opacity: 0,
-                y: 50
-              }
+                y: 50,
+              },
             }}
           >
             <h3>Web Developer & Editing Video</h3>
@@ -96,11 +96,11 @@ const About = () => {
               </div>
             </div>
             <p>
-              Di waktu luang, saya melakukan memikirkan ide ngoding ataupun editing video
-              lalu membuatnya sebagai mini project. Saya selalu bersemangat
-              untuk belajar hal baru dan mengembangkan kemampuan saya lebih
-              jauh. Saya percaya bahwa semangat untuk terus belajar dan
-              beradaptasi adalah kunci kesuksesan dalam dunia teknologi yang
+              Di waktu luang, saya melakukan memikirkan ide ngoding ataupun
+              editing video lalu membuatnya sebagai mini project. Saya selalu
+              bersemangat untuk belajar hal baru dan mengembangkan kemampuan
+              saya lebih jauh. Saya percaya bahwa semangat untuk terus belajar
+              dan beradaptasi adalah kunci kesuksesan dalam dunia teknologi yang
               terus berkembang.
             </p>
           </motion.div>
