@@ -147,7 +147,7 @@ const projectDetails = [
     <p style="text-align: justify;">Dengan kombinasi fitur-fitur di atas, <strong>Motion Graphics UI/UX</strong> menawarkan pendekatan baru dalam desain antarmuka pengguna, menunjukkan bagaimana elemen-elemen digital dapat berinteraksi secara dinamis dan memberikan pengalaman yang lebih hidup dan menarik bagi pengguna.</p>
   `,  
     video: [
-      "/videos/motion-graphics-uiux.mp4",
+      "https://www.youtube.com/embed/n3FDdPOyp3Q",
     ],
     year: 2023,
     category: "Video",
@@ -194,12 +194,16 @@ const projectDetails = [
   </ul>
 
   <p style="text-align: justify;">Dengan teknologi dan fitur-fitur tersebut, <strong>Sistem Antrian Rumah Sakit</strong> memastikan pengelolaan antrian yang optimal, meningkatkan efisiensi operasional rumah sakit, dan memberikan kenyamanan lebih bagi pasien.</p>
+  <h2>Demo Aplikasi</h2>
+  <p>Di bawah ini adalah tautan ke demo aplikasi di YouTube:</p>
+  
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/hSleS3WpD9s?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+  </div>
 `,
     images: [
       "/img/project 3 - detail 1.png",
       "/img/project 3 - detail 2.png",
-      "/img/project 3 - detail 3.png",
-      "/img/project 3 - detail 4.png",
     ],
     year: 2024,
     category: "aplikasi",
@@ -295,7 +299,7 @@ const projectDetails = [
 
   <p style="text-align: justify;">Transisi dan timing yang tepat dipastikan untuk menciptakan kesan yang kuat pada penonton. Proyek ini menunjukkan kemampuan dalam menggunakan tools canggih di After Effects untuk menghasilkan animasi yang profesional dan menarik.</p>
 `,
-    video: "/videos/logo-reveal.mp4",
+    video: "https://www.youtube.com/embed/aOLisfGROGA",
     year: 2024,
     category: "Video",
     client: "IT Fest",
@@ -312,7 +316,7 @@ const projectDetails = [
 
   <p style="text-align: justify;">Hasil akhirnya adalah video yang lucu dan menghibur, berhasil menangkap esensi dari adegan asli dengan sentuhan kreatif saya sendiri. Proyek ini menunjukkan kemampuan dalam menggunakan software pengeditan video canggih untuk menghasilkan konten yang profesional dan menghibur.</p>
 `,
-    video: "/videos/zolla-nyamuk.mov",
+    video: "https://www.youtube.com/embed/zfexkuAWhSc",
     year: 2023,
     category: "Video",
     client: "-",
@@ -339,7 +343,7 @@ const projectDetails = [
   <p style="text-align: justify;">Warna-warna yang hangat dan menyala dipilih untuk memberikan kesan dinamis dan membangkitkan semangat kompetisi. Proyek ini menunjukkan kemampuan dalam menggunakan teknik-teknik editing video canggih untuk menghasilkan konten yang profesional dan menginspirasi.</p>
 `,
 
-    video: "/videos/trailer-omi.mp4",
+    video: "https://www.youtube.com/embed/GaikbmIoAK4?vq=hd1080",
     year: 2024,
     category: "Video",
     client: "OMI",

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2'; // Impor SweetAlert
@@ -37,6 +37,10 @@ function ContactPage() {
       });
     e.target.reset();
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="contact-page">

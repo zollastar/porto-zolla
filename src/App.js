@@ -62,8 +62,14 @@ function App() {
   useEffect(() => {
     if (location.pathname !== '/') {
       setActiveSection('');
+    } else if (location.state?.section) {
+      const sectionId = location.state.section;
+      const sectionElement = document.getElementById(sectionId);
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.state]);
 
   return (
     <div className="App">

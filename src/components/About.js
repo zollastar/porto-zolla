@@ -31,7 +31,7 @@ const About = () => {
         animate={inView ? "visible" : "hidden"}
         variants={variants}
       >
-        <h2>About Me Zolla Tampan</h2>
+        <h2>About Me</h2>
         <p>
           Halo, nama saya Zolla Perdana Putra Harahap. Saya adalah mahasiswa di
           IPB University, jurusan Teknologi Rekayasa Perangkat Lunak. Dengan

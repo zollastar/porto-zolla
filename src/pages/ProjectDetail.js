@@ -46,22 +46,22 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div>
-      <nav className="breadcrumb">
-        <div className="breadcrumb-left">
+    <div className="project-detail-page-new">
+      <nav className="breadcrumb-new">
+        <div className="breadcrumb-left-new">
           <h1>Project Detail</h1>
         </div>
-        <div className="breadcrumb-right">
-          <Link to="/">Home</Link> / <span>Project Detail</span>
+        <div className="breadcrumb-right-new">
+          <Link to="/">Home</Link> / <span>{project.title}</span>
         </div>
       </nav>
-      <div className="project-detail">
-        <div className="detail-content">
-          <div className="detail-info-container">
-            <div className="detail-info-card">
+      <div className="project-detail-new">
+        <div className="detail-content-new">
+          <div className="detail-info-container-new">
+            <div className="detail-info-card-new">
               <h2>Project Information</h2>
               <hr />
-              <div className="details">
+              <div className="details-new">
                 <p><strong>Category:</strong> {project.category}</p>
                 <p><strong>Client:</strong> {project.client}</p>
                 <p><strong>Project Date:</strong> {project.date}</p>
@@ -69,20 +69,18 @@ const ProjectDetail = () => {
               </div>
             </div>
             <br />
-            <div className="detail-description">
-              <h3>Project Description</h3>
-              <div dangerouslySetInnerHTML={{ __html: project.description }} />
-            </div>
+            <h3>Project Description</h3>
+            <p dangerouslySetInnerHTML={{ __html: project.description }} />
           </div>
-          <div className="project-media">
+          <div className="project-media-new">
             {project.images && project.images.length > 0 && (
-              <div className="project-slider">
+              <div className="project-slider-new">
                 <Slider {...settings}>
                   {project.images.map((image, index) => (
-                    <div key={index} className="project-detail-image-container">
+                    <div key={index} className="project-detail-image-container-new">
                       <img 
                         src={image} 
-                        className="project-detail-image" 
+                        className="project-detail-image-new" 
                         alt={`${project.title} screenshot ${index + 1}`} 
                         onClick={() => openModal(image)}
                         style={{ cursor: 'pointer' }}
@@ -94,11 +92,16 @@ const ProjectDetail = () => {
             )}
 
             {project.video && (
-              <div className="project-video">
-                <video controls>
-                  <source src={project.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="project-video-new">
+                <div className="video-container">
+                  <iframe 
+                    src={project.video} 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="Project Video"
+                  ></iframe>
+                </div>
               </div>
             )}
           </div>
@@ -107,19 +110,19 @@ const ProjectDetail = () => {
           isOpen={isOpen}
           onRequestClose={closeModal}
           contentLabel="Image Modal"
-          className="image-modal"
-          overlayClassName="image-modal-overlay"
+          className="image-modal-new"
+          overlayClassName="image-modal-overlay-new"
         >
-          <div className="modal-content">
-            <button onClick={closeModal} className="close-modal-button" aria-label="Close">
+          <div className="modal-content-new">
+            <button onClick={closeModal} className="close-modal-button-new" aria-label="Close">
               <i className="bi bi-x" style={{ fontSize: '2rem', color: 'white' }}></i>
             </button>
-            <div className="modal-slider">
+            <div className="modal-slider-new">
               {project.images && project.images.length > 0 && (
                 <Slider {...settings}>
                   {project.images.map((image, index) => (
-                    <div key={index} className="modal-image-container">
-                      <img src={image} alt={`Enlarged project ${index}`} className="enlarged-image" />
+                    <div key={index} className="modal-image-container-new">
+                      <img src={image} alt={`Enlarged project ${index}`} className="enlarged-image-new" />
                     </div>
                   ))}
                 </Slider>

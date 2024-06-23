@@ -923,125 +923,130 @@ body {
 /*DETAIL PROJECT*/
 /*DETAIL PROJECT*/
 /*PROJECT DETAIL*/
-/* ProjectDetail.css */
-.project-detail {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.project-detail-page-new {
+  padding: 0; /* Hapus padding */
+  background-color: transparent; /* Hapus warna background */
 }
 
-.breadcrumb {
+/* Sesuaikan breadcrumb */
+.breadcrumb-new {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   background-color: #d4e1f0;
   padding: 10px 20px;
-  width: 100%;
+  position: fixed;
+  width: calc(100% - 20px); /* Ubah lebar breadcrumb */
   top: 0;
-  left: 0;
+  left: 10px; /* Ubah margin kiri */
   z-index: 1000;
 }
 
-.breadcrumb-left h1 {
-  margin: 0;
-  font-size: 2em;
-  color: #333;
+/* Sesuaikan detail proyek */
+.project-detail-new {
+  margin-top: 80px; /* Adjusted to create space for fixed breadcrumb */
+  padding: 20px;
+  background-color: transparent; /* Hapus warna background */
+  box-shadow: none; /* Hapus bayangan */
+  border-radius: 0; /* Hapus border-radius */
 }
 
-.breadcrumb-right a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.breadcrumb-right span {
-  margin-left: 5px;
-  color: #6c757d;
-}
-
-.detail-content {
+/* Style lainnya tetap sama */
+.detail-content-new {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.detail-info-container {
+.detail-info-container-new {
   flex: 1;
   min-width: 300px;
 }
 
-.detail-info-card {
+.detail-info-card-new {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ddd;
 }
 
-.detail-info-card h2 {
+.detail-info-card-new h2 {
   margin-top: 0;
   color: #343a40;
 }
 
-.detail-info-card hr {
+.detail-info-card-new hr {
   margin: 10px 0;
 }
 
-.details p {
+.details-new p {
   margin: 5px 0;
 }
 
-.details strong {
+.details-new strong {
   color: #495057;
 }
 
-.detail-description h3 {
+.detail-description-new h3 {
   margin-top: 0;
   color: #343a40;
 }
 
-.detail-description p {
+.detail-description-new p {
   text-align: justify;
 }
 
-.project-media {
+.project-media-new {
   flex: 1;
   min-width: 300px;
 }
 
-.project-slider {
+.project-slider-new {
   margin-bottom: 20px;
 }
 
-.project-detail-image-container {
+.project-detail-image-container-new {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.project-detail-image {
+.project-detail-image-new {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the video container to match image styles */
-.project-video {
+/* Style untuk video container agar sesuai dengan gaya gambar */
+.project-video-new {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.project-video video {
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
   max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 0;
 }
 
-/* Modal for enlarged images */
-.image-modal-overlay {
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Modal untuk gambar yang diperbesar */
+.image-modal-overlay-new {
   position: fixed;
   top: 0;
   left: 0;
@@ -1054,7 +1059,7 @@ body {
   z-index: 1000;
 }
 
-.image-modal {
+.image-modal-new {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1065,9 +1070,10 @@ body {
   max-height: 80%;
   overflow: hidden;
   border-radius: 10px;
+  margin-left: 140px;
 }
 
-.modal-content {
+.modal-content-new {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1075,23 +1081,23 @@ body {
   position: relative;
 }
 
-.modal-slider {
+.modal-slider-new {
   width: 100%;
   height: 100%;
 }
 
-.modal-image-container {
+.modal-image-container-new {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.enlarged-image {
+.enlarged-image-new {
   max-width: 100%;
   max-height: 80vh;
 }
 
-.close-modal-button {
+.close-modal-button-new {
   background: none;
   border: none;
   position: absolute;
@@ -1103,12 +1109,12 @@ body {
 }
 
 /* Ordered list style */
-.detail-description ul {
+.detail-description-new ul {
   list-style-type: decimal;
   padding-left: 20px;
 }
 
-.detail-description ul li {
+.detail-description-new ul li {
   margin-bottom: 10px;
 }
 
@@ -1149,7 +1155,7 @@ p {
   justify-content: flex-start;
   top: 0;
   left: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   color: #fff;
 }
 
@@ -1230,7 +1236,7 @@ p {
   display: none;
   cursor: pointer;
   font-size: 24px;
-  color: #fff;
+  color: #007bff;
   position: fixed;
   top: 15px;
   right: 15px; /* Mengubah dari left ke right */
@@ -1334,6 +1340,126 @@ p {
 
 .navbar-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*NAVBAR*/
+@keyframes menuBtn {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(0.5); }
+}
+
+.nav-open-btn .line-2 { animation-delay: 150ms; }
+.nav-open-btn .line-3 { animation-delay: 300ms; }
+
+/* Gaya tombol tutup pada navbar */
+.navbar .close-btn {
+  color: var(--white);
+  border: 1px solid currentColor;
+  padding: 4px;
+  border-radius: var(--radius-circle);
+  margin-inline-start: auto;
+  margin-block: 30px 20px;
+}
+
+/* Gaya logo dalam navbar */
+.navbar .logo {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 60px;
+}
+
+/* Gaya untuk item navbar */
+.navbar-list {
+  border-block-end: 1px solid var(--white-alpha-20);
+  margin-block-end: 100px;
+}
+
+.navbar-item {
+  border-block-start: 1px solid var(--white-alpha-20);
+}
+
+/* Gaya link dalam navbar */
+.navbar-link {
+  position: relative;
+  font-size: var(--fontSize-label-2);
+  padding-block: 10px;
+  max-width: unset;
+}
+
+/* Gaya untuk elemen span dalam navbar-link */
+.navbar-link .span {
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+  color: var(--gold-crayola);
+  transform: translateX(20px);
+}
+
+/* Gaya untuk separator dalam navbar-link */
+.navbar-link .separator {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator {
+  opacity: 1;
+}
+
+/* Gaya untuk elemen lainnya dalam navbar */
+.navbar-title {
+  margin-block-end: 15px;
+}
+
+.navbar-text {
+  margin-block: 10px;
+}
+
+.navbar .body-4 {
+  color: var(--quick-silver);
+}
+
+.sidebar-link {
+  transition: var(--transition-1);
+}
+
+.sidebar-link:is(:hover, :focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.navbar .text-center .separator {
+  margin-block: 30px;
+  margin-inline: auto;
+}
+
+.navbar .contact-label {
+  margin-block-end: 10px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: var(--white-alpha-10);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--black-alpha-80);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-2);
+  z-index: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /*--------------------------------------------------------------
@@ -1458,126 +1584,6 @@ p {
 # Media Queries
 --------------------------------------------------------------*/
 /*NAVBAR*/
-@keyframes menuBtn {
-  0% { transform: scaleX(1); }
-  100% { transform: scaleX(0.5); }
-}
-
-.nav-open-btn .line-2 { animation-delay: 150ms; }
-.nav-open-btn .line-3 { animation-delay: 300ms; }
-
-/* Gaya tombol tutup pada navbar */
-.navbar .close-btn {
-  color: var(--white);
-  border: 1px solid currentColor;
-  padding: 4px;
-  border-radius: var(--radius-circle);
-  margin-inline-start: auto;
-  margin-block: 30px 20px;
-}
-
-/* Gaya logo dalam navbar */
-.navbar .logo {
-  max-width: max-content;
-  margin-inline: auto;
-  margin-block-end: 60px;
-}
-
-/* Gaya untuk item navbar */
-.navbar-list {
-  border-block-end: 1px solid var(--white-alpha-20);
-  margin-block-end: 100px;
-}
-
-.navbar-item {
-  border-block-start: 1px solid var(--white-alpha-20);
-}
-
-/* Gaya link dalam navbar */
-.navbar-link {
-  position: relative;
-  font-size: var(--fontSize-label-2);
-  text-transform: uppercase;
-  padding-block: 10px;
-  max-width: unset;
-}
-
-/* Gaya untuk elemen span dalam navbar-link */
-.navbar-link .span {
-  transition: var(--transition-1);
-}
-
-.navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: var(--gold-crayola);
-  transform: translateX(20px);
-}
-
-/* Gaya untuk separator dalam navbar-link */
-.navbar-link .separator {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(45deg);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.navbar-link:is(:hover, :focus-visible, .active) .separator {
-  opacity: 1;
-}
-
-/* Gaya untuk elemen lainnya dalam navbar */
-.navbar-title {
-  margin-block-end: 15px;
-}
-
-.navbar-text {
-  margin-block: 10px;
-}
-
-.navbar .body-4 {
-  color: var(--quick-silver);
-}
-
-.sidebar-link {
-  transition: var(--transition-1);
-}
-
-.sidebar-link:is(:hover, :focus-visible) {
-  color: var(--gold-crayola);
-}
-
-.navbar .text-center .separator {
-  margin-block: 30px;
-  margin-inline: auto;
-}
-
-.navbar .contact-label {
-  margin-block-end: 10px;
-}
-
-.navbar::-webkit-scrollbar-thumb {
-  background-color: var(--white-alpha-10);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: var(--black-alpha-80);
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-2);
-  z-index: 1;
-}
-
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
 /* Media queries untuk mengatur tampilan di berbagai ukuran layar */
 @media (max-width: 768px) {
   .navbar {
@@ -2129,6 +2135,26 @@ p {
   .project-media {
     order: -1;
   }
+  .image-modal-new {
+    max-width: 90%;
+    max-height: 80vh;
+    padding: 10px;
+    margin-left: 2px;
+  }
+
+  .modal-content-new {
+    margin: 0;
+  }
+
+  .enlarged-image-new {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+
+  .close-modal-button-new {
+    top: 5px;
+    right: 5px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2163,6 +2189,27 @@ p {
   .close-modal-button {
     top: -30px;
     right: -20px;
+  }
+
+  .image-modal-new {
+    max-width: 90%;
+    max-height: 70vh;
+    padding: 5px;
+    margin-left: 2px;
+  }
+
+  .modal-content-new {
+    margin: 0;
+  }
+
+  .enlarged-image-new {
+    max-width: 100%;
+    max-height: 50vh;
+  }
+
+  .close-modal-button-new {
+    top: 2px;
+    right: 2px;
   }
 }
 

@@ -143,17 +143,6 @@ const Resume = () => {
               </ul>
             </div>
             <div className="resume-item">
-              <h4> Project Multimedia “Motion Graphics” dan “ Powerpoint</h4>
-              <h5>2023</h5>
-              <ul>
-                <li>Sebagai Creative Director</li>
-                <li>
-                  Mengembangkan ide kreatif, mengarahkan tim kreatif, mengelola
-                  proyek
-                </li>
-              </ul>
-            </div>
-            <div className="resume-item">
               <h4> Project Pembuatan Game RPG</h4>
               <h5>2023</h5>
               <ul>
@@ -161,6 +150,17 @@ const Resume = () => {
                 <li>
                   Membuat Map, Jalan Cerita, Desain, Pengkodean, Alur, dan
                   koordinasi Tim
+                </li>
+              </ul>
+            </div>
+            <div className="resume-item">
+              <h4> Project Multimedia “Motion Graphics” dan “ Powerpoint</h4>
+              <h5>2023</h5>
+              <ul>
+                <li>Sebagai Creative Director</li>
+                <li>
+                  Mengembangkan ide kreatif, mengarahkan tim kreatif, mengelola
+                  proyek
                 </li>
               </ul>
             </div>

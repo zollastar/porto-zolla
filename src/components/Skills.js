@@ -4,23 +4,28 @@ import { useInView } from "react-intersection-observer";
 import useCountTo from "../hooks/useCountTo";
 
 const skills = {
-  frontend: [
-    { name: "HTML", percentage: 100 },
-    { name: "CSS", percentage: 93 },
-    { name: "JS", percentage: 90 },
+  "Frontend Development": [
+    { name: "HTML", percentage: 97 },
+    { name: "CSS", percentage: 94 },
+    { name: "JavaScript", percentage: 86 },
+    { name: "React", percentage: 85 },
   ],
-  backend: [
-    { name: "Java", percentage: 83 },
+  "Backend Development": [
+    { name: "Java", percentage: 93 },
     { name: "PostgreSQL", percentage: 96 },
+    { name: "MySQL", percentage: 86 },
+    { name: "Python", percentage: 87 },
   ],
-  videoEditing: [
+  Multimedia: [
     { name: "Premiere Pro", percentage: 95 },
     { name: "After Effects", percentage: 92 },
     { name: "Davinci Resolve", percentage: 87 },
-  ],
-  design: [
     { name: "Photoshop", percentage: 80 },
     { name: "Figma", percentage: 70 },
+  ],
+  "Game Development": [
+    { name: "Scratch", percentage: 89 },
+    { name: "RPG Maker", percentage: 96 },
   ],
 };
 
