@@ -343,7 +343,7 @@ const projectDetails = [
   <p style="text-align: justify;">Warna-warna yang hangat dan menyala dipilih untuk memberikan kesan dinamis dan membangkitkan semangat kompetisi. Proyek ini menunjukkan kemampuan dalam menggunakan teknik-teknik editing video canggih untuk menghasilkan konten yang profesional dan menginspirasi.</p>
 `,
 
-    video: "https://www.youtube.com/embed/GaikbmIoAK4?vq=hd1080",
+    video: "https://www.youtube.com/embed/GaikbmIoAK4?vq=hd1080", 
     year: 2024,
     category: "Video",
     client: "OMI",
