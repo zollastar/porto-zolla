@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2'; // Impor SweetAlert
+import Swal from 'sweetalert2';
 
 function ContactPage() {
   const [formData, setFormData] = useState({

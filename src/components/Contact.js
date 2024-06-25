@@ -1,116 +1,59 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
-function ContactPage() {
-  const [formData, setFormData] = useState({
-    from_name: '',
-    to_name: 'Zolla Perdana Pura Harahap',
-    subject: '',
-    message: ''
+function Contact() {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact-page');
+  };
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const variants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.43, 0.13, 0.23, 0.96],
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_3xvyp0f', 'template_nzoj8ts', e.target, 'JtrvPH4wr7jtgiIMP')
-      .then((result) => {
-        Swal.fire({
-          icon: 'success',
-          title: 'Email berhasil dikirim!',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      }, (error) => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Gagal mengirim email',
-          text: 'Silakan coba lagi nanti.',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      });
-    e.target.reset();
-  };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
-    <div className="contact-page">
-      <nav className="breadcrumb-new">
-        <div className="breadcrumb-left-new">
-          <h1>Contact</h1>
-        </div>
-        <div className="breadcrumb-right-new">
-          <Link to="/">Home</Link> / <span>Contact</span>
-        </div>
-      </nav>
-      <div className="contact-page-content">
-        <form onSubmit={handleSubmit} className="contact-page-form">
-          <h2>Contact Me</h2>
-          <p>Jangan ragu untuk menghubungi saya kapan saja. Saya akan segera merespons secepat mungkin!</p>
-          <label htmlFor="from_name">Name:</label>
-          <input 
-            type="text" 
-            id="from_name" 
-            name="from_name" 
-            required 
-            onChange={handleChange} 
-            placeholder="Name" 
-          />
-
-          <label htmlFor="email">Email:</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            required 
-            onChange={handleChange} 
-            placeholder="Email" 
-          />
-
-          <label htmlFor="subject">Subject:</label>
-          <input 
-            type="text" 
-            id="subject" 
-            name="subject" 
-            required 
-            onChange={handleChange} 
-            placeholder="Subject" 
-          />
-
-          <label htmlFor="message">Message:</label>
-          <textarea 
-            id="message" 
-            name="message" 
-            required 
-            onChange={handleChange} 
-            placeholder="Message"
-          ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-        <div className="contact-page-info">
-          <h3>Contact Info</h3>
-          <p><i className="bi bi-telephone-fill tel"></i> <a className="contact-link" href="https://wa.me/6281312343829" target="_blank" rel="noopener noreferrer">+62 813 1234 3829</a></p>
-          <p><i className="bi bi-envelope-fill"></i> zollaperdana29@gmail.com</p>
-          <p><i className="bi bi-geo-alt-fill"></i> Jalan Karet Pasar Baru Barat 1, Jakarta Pusat, Indonesia</p>
-          <div className="contact-page-social-links">
-            <a href="https://www.facebook.com/zolla.p.harahap"><i className="bi bi-facebook"></i></a>
-            <a href="https://instagram.com/zollahrp"><i className="bi bi-instagram"></i></a>
-            <a href="https://x.com/zollahrp"><i className="bi bi-twitter"></i></a>
-          </div>
-        </div>
+    <section id="contact" className="home-contact-section py-16 bg-gray-100 w-full">
+      <div className="contact-shadow-wrapper mx-auto px-4">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+          variants={variants}
+          className="contact-content-wrapper bg-white p-8 rounded-lg shadow-xl"
+        >
+          <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
+          <p className="text-lg text-gray-700 mb-6">
+          Jangan ragu untuk menghubungi saya kapan saja. Saya akan segera merespons secepat mungkin!
+          </p>
+          <button
+            onClick={handleContactClick}
+            className="home-contact-button bg-blue-600 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+          >
+            Contact Me
+          </button>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default ContactPage;
+export default Contact;
