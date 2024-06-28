@@ -52,7 +52,7 @@ const Navbar = ({ activeSection }) => {
       </div>
       <nav className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <div className="navbar-profile">
-          <img src={`${process.env.PUBLIC_URL}/img/profile.png`} alt="Profile" className="navbar-profile-img" />
+          <img src={`${process.env.PUBLIC_URL}/img/profile.jpg`} alt="Profile" className="navbar-profile-img" />
           <h2 className="navbar-profile-name">Zolla Harahap</h2>
           <div className="navbar-social-icons">
             <a href="https://www.facebook.com/zolla.p.harahap"><i className="bi bi-facebook"></i></a>

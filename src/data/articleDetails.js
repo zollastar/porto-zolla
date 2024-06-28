@@ -32,7 +32,7 @@ const articleDetails = [
       id: 2,
       title: 'Memahami Artificial Intelligence (AI): Teknologi Cerdas yang Mengubah Dunia',
       date: '18 Mei 2024',
-      image: '/img/article 2.png',
+      image: '/img/article 2.jpg',
       content: `
           <p>Artificial Intelligence (AI) atau kecerdasan buatan telah menjadi salah satu teknologi paling revolusioner di abad ke-21. Dari mobil otonom hingga asisten virtual, AI telah mengubah cara kita hidup dan bekerja. Artikel ini akan mengupas lebih dalam tentang AI, bagaimana cara kerjanya, dan dampaknya terhadap berbagai sektor.</p>
         
@@ -61,7 +61,7 @@ const articleDetails = [
     id: 3,
     title: 'Mengoptimalkan Kinerja Perangkat Lunak dengan Pemrograman Berbasis AI',
     date: '2 Juni 2024',
-    image: '/img/article 5.png',
+    image: '/img/article 5.jpg',
     content: `
         <p>Di era digital saat ini, perangkat lunak memainkan peran penting dalam berbagai aspek kehidupan. Namun, untuk memastikan bahwa perangkat lunak dapat berfungsi secara optimal dan memenuhi kebutuhan pengguna, diperlukan teknik pengembangan yang canggih. Salah satu teknik yang paling menjanjikan adalah pemrograman berbasis AI. Artikel ini akan membahas bagaimana AI dapat digunakan untuk mengoptimalkan kinerja perangkat lunak.</p>
         
@@ -208,7 +208,7 @@ const articleDetails = [
   id: 6,
   title: 'Perkembangan Software Editing Video: Apa yang Baru di Adobe Premiere Pro 2024?',
   date: '17 Juni 2024',
-  image: '/img/article 6.png',
+  image: '/img/article 6.jpg',
   content: `
       <p>Adobe Premiere Pro telah lama menjadi standar industri untuk pengeditan video profesional. Setiap tahun, Adobe terus berinovasi dan memperkenalkan fitur-fitur baru untuk memenuhi kebutuhan para editor video yang selalu berkembang. Tahun 2024 tidak terkecuali, dengan berbagai pembaruan dan peningkatan yang menjadikan Adobe Premiere Pro semakin kuat dan efisien. Artikel ini akan membahas apa saja yang baru di Adobe Premiere Pro 2024.</p>
         

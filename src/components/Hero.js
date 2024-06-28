@@ -37,7 +37,7 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <img
-        src={`${process.env.PUBLIC_URL}/img/hero-bg.png`}
+        src={`${process.env.PUBLIC_URL}/img/hero-bg.jpg`}
         alt="Hero Background"
       />
       <div className="container">

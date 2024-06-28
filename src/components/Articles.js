@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 
 const articles = [
   { id: 1, date: '10 Mei 2024', title: 'Behind the Success: The Power of a Great Team', image: '/img/article 1.jpg', text: 'Di balik kesuksesan sebuah proyek yang luar biasa, terdapat sebuah tim yang luar biasa pula...' },
-  { id: 2, date: '18 Mei 2024', title: 'Memahami Artificial Intelligence (AI): Teknologi Cerdas yang Mengubah Dunia', image: '/img/article 2.png' },
-  { id: 3, date: '2 Juni 2024', title: 'Mengoptimalkan Kinerja Perangkat Lunak dengan Pemrograman Berbasis AI', image: '/img/article 5.png' },
+  { id: 2, date: '18 Mei 2024', title: 'Memahami Artificial Intelligence (AI): Teknologi Cerdas yang Mengubah Dunia', image: '/img/article 2.jpg' },
+  { id: 3, date: '2 Juni 2024', title: 'Mengoptimalkan Kinerja Perangkat Lunak dengan Pemrograman Berbasis AI', image: '/img/article 5.jpg' },
   { id: 4, date: '7 Juni 2024', title: 'From Zero to Hero: Panduan Video Editing secara Otodidak', image: '/img/article 4.jpg' },
   { id: 5, date: '15 Juni 2024', title: 'Membangun Karir di Bidang E-commerce: Peluang Menjanjikan di Era Digital', image: '/img/article 3.jpg' },
-  { id: 6, date: '17 Juni 2024', title: 'Perkembangan Software Editing Video: Apa yang Baru di Adobe Premiere Pro 2024?', image: '/img/article 6.png' },
+  { id: 6, date: '17 Juni 2024', title: 'Perkembangan Software Editing Video: Apa yang Baru di Adobe Premiere Pro 2024?', image: '/img/article 6.jpg' },
 ];
 
 const Articles = () => {

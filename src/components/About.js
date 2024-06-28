@@ -41,7 +41,7 @@ const About = () => {
         </p>
         <div className="about-content">
           <motion.img
-            src={`${process.env.PUBLIC_URL}/img/profile.png`}
+            src={`${process.env.PUBLIC_URL}/img/profile.jpg`}
             alt="Profile"
             className="about-profile-img"
             initial="hidden"
