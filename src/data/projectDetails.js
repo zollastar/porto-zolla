@@ -1,31 +1,44 @@
 const projectDetails = [
   {
     id: 1,
-    title: "Website Danies Cafe",
+    title: "Website Denias Cafe",
     description: `
-<p>
-  Proyek <strong>Website Danies Cafe</strong> bertujuan untuk membuat platform digital yang berfungsi sebagai situs web resmi kafe Danies. Situs web ini dirancang untuk memberikan kemudahan bagi pengunjung dalam memesan meja, memberikan review, dan mengakses informasi terkait kafe. Selain itu, website ini juga dilengkapi dengan dashboard manajemen yang komprehensif untuk admin dan manajer dalam mengelola konten serta melihat statistik penting.
+<p style="text-align: justify;">
+  Proyek <strong>Website Denias Cafe</strong> bertujuan untuk membuat platform digital yang berfungsi sebagai situs web resmi kafe Denias. Situs web ini dirancang untuk memberikan kemudahan bagi pengunjung dalam memesan meja, memberikan review, dan mengakses informasi terkait kafe. Selain itu, website ini juga dilengkapi dengan dashboard manajemen yang komprehensif untuk admin dan manajer dalam mengelola konten serta melihat statistik penting.
 </p>
 
 <h3>Fitur Utama</h3>
-<ul>
-  <li><strong>Autentikasi dan Otorisasi:</strong> Menggunakan Spring Security dan JWT untuk mengamankan endpoint API.</li>
-  <li><strong>Manajemen Pengguna:</strong> Fitur CRUD (Create, Read, Update, Delete) dan ganti kata sandi menggunakan Spring Data JPA.</li>
-  <li><strong>Dashboard Admin:</strong>
-    <ul>
+<ul style="list-style-type: decimal; padding-left: 20px; text-align: justify;">
+  <li>
+    <strong>Autentikasi dan Otorisasi:</strong> Menggunakan Spring Security dan JWT untuk mengamankan endpoint API.
+  </li>
+  <li>
+    <strong>Manajemen Pengguna:</strong> Fitur CRUD (Create, Read, Update, Delete) dan ganti kata sandi menggunakan Spring Data JPA.
+  </li>
+  <li>
+    <strong>Dashboard Admin:</strong>
+    <ul style="list-style-type: decimal; padding-left: 40px; text-align: justify;">
       <li>Statistik pendapatan dan pengeluaran.</li>
       <li>Pengelola menu dan review.</li>
       <li>To-do-list menggunakan Thymeleaf untuk rendering halaman HTML.</li>
     </ul>
   </li>
-  <li><strong>Manajemen Produk:</strong> Fitur CRUD produk dan kategori produk, serta repository dan service terkait.</li>
-  <li><strong>Download Data:</strong> Data pendapatan dalam format chart js dan tabel.</li>
-  <li><strong>Desain Responsif:</strong> Menggunakan Bootstrap atau CSS Grid untuk tampilan yang cepat dan responsif.</li>
-  <li><strong>Verifikasi Kode:</strong> Untuk login admin.</li>
+  <li>
+    <strong>Manajemen Produk:</strong> Fitur CRUD produk dan kategori produk, serta repository dan service terkait.
+  </li>
+  <li>
+    <strong>Download Data:</strong> Data pendapatan dalam format chart js dan tabel.
+  </li>
+  <li>
+    <strong>Desain Responsif:</strong> Menggunakan Bootstrap atau CSS Grid untuk tampilan yang cepat dan responsif.
+  </li>
+  <li>
+    <strong>Verifikasi Kode:</strong> Untuk login admin.
+  </li>
 </ul>
 
 <h3>Fitur di Web User</h3>
-<ul>
+<ul style="list-style-type: decimal; padding-left: 20px; text-align: justify;">
   <li>Pesan meja yang diarahkan ke WhatsApp.</li>
   <li>Top menu di homepage yang menampilkan menu teratas dari kafe yang dapat diatur melalui dashboard.</li>
   <li>Navigasi di header dan footer.</li>
@@ -35,16 +48,17 @@ const projectDetails = [
 </ul>
 
 <h3>Fitur Dashboard Manager</h3>
-<ul>
+<ul style="list-style-type: decimal; padding-left: 20px; text-align: justify;">
   <li>Mengganti kode verifikasi.</li>
   <li>Melihat jumlah views pada website.</li>
   <li>Melihat total akun admin yang melakukan sign up.</li>
   <li>Menghapus akun admin.</li>
 </ul>
 
-<p>
-  Website Danies Cafe ini dirancang untuk memenuhi kebutuhan pengunjung dan admin dengan fitur-fitur yang lengkap dan mudah digunakan. Implementasi teknologi modern seperti Spring Security, JWT, Spring Data JPA, dan Thymeleaf memastikan keamanan, efisiensi, dan kenyamanan dalam penggunaannya. Dengan desain responsif yang didukung oleh Bootstrap, situs web ini akan terlihat menarik dan fungsional di berbagai perangkat.
-</p>    `,
+<p style="text-align: justify;">
+  Website Denias Cafe ini dirancang untuk memenuhi kebutuhan pengunjung dan admin dengan fitur-fitur yang lengkap dan mudah digunakan. Implementasi teknologi modern seperti Spring Security, JWT, Spring Data JPA, dan Thymeleaf memastikan keamanan, efisiensi, dan kenyamanan dalam penggunaannya. Dengan desain responsif yang didukung oleh Bootstrap, situs web ini akan terlihat menarik dan fungsional di berbagai perangkat.
+</p>
+  `,
     images: [
       "/img/detail 1 - project 1.jpg",
       "/img/detail 2 -project 1.jpg",
@@ -63,7 +77,7 @@ const projectDetails = [
     ],
     year: 2024,
     category: "website",
-    client: "Danies Cafe",
+    client: "Denias Cafe",
     date: "15 May 2024",
     sebagai: "Fullstack",
   },
